@@ -1,6 +1,6 @@
-package com.algar.ecommercer.ecommerce.util;
+package com.algar.ecommerce.model.util;
 
-import com.algar.ecommercer.ecommerce.model.Produto;
+import com.algar.ecommerce.model.Produto;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

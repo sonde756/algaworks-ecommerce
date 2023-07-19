@@ -1,16 +1,18 @@
 package com.algar.ecommercer;
 
-import com.algar.ecommercer.ecommerce.model.Produto;
-import org.junit.*;
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-public class ConsultandoRegistrosTest {
+public class EntityManagerTest {
 
-    private static EntityManagerFactory entityManagerFactory;
-    private EntityManager entityManager;
+    protected static EntityManagerFactory entityManagerFactory;
+    protected EntityManager entityManager;
 
 
     @BeforeClass
@@ -33,11 +35,4 @@ public class ConsultandoRegistrosTest {
         entityManager.close();
     }
 
-    @Test
-    public void buscarPorIdentificador() {
-
-        Produto produto = entityManager.find(Produto.class, 1);
-
-        Assert.assertNotNull(produto);
-    }
 }
